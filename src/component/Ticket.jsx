@@ -14,9 +14,12 @@ function Ticket() {
         <Inputs ticket={ticket} setTicket={setTicket} />
       </div>
       <ul>
-        {ticket.map((e) => (
-          <Cards key={e.id} ticket={e} deleteItem={deleteItem} />
-        ))}
+        <h3> Your selected Tickets : </h3>
+        <div className={styled.cards}>
+          {ticket.map((e) => (
+            <Cards key={e.id} ticket={e} deleteItem={deleteItem} />
+          ))}
+        </div>
       </ul>
     </div>
   );

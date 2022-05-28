@@ -7,7 +7,6 @@ function Cards({ ticket, deleteItem }) {
   console.log(no, "no");
   return (
     <div>
-      <h3> Your selected Tickets : </h3>
       <div className={styled.bg_box}>
         <div className={styled.display_button_1}>
           <p className={styled.ticket_id}>Ticket #{ticket.id}</p>
