@@ -1,0 +1,114 @@
+.btn {
+  display: flex;
+  justify-content: center;
+}
+.btn div {
+  padding: 5px;
+  width: 80px;
+  border: 1px solid #dcdee0;
+  cursor: pointer;
+  font-size: 20px;
+}
+.container {
+  border-radius: 5px;
+  background-color: white;
+  border: 1px solid gray;
+  width: 240px;
+  margin: auto;
+}
+.bg_box {
+  width: 120px;
+  padding: 2px;
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.border_box_input {
+  border: 1px solid gray;
+  width: 150px;
+  padding: 50px;
+  margin: auto;
+  margin-top: 30px;
+}
+.sow_number {
+  display: flex;
+  justify-content: space-between;
+}
+.sow_number > div {
+  font-size: 8px;
+  color: #fb8664;
+  border: 1px solid #fb8664;
+  height: 10px;
+  padding: 2px;
+  border-radius: 2px;
+  background-color: #fff2e7;
+}
+.sow_number > h5 {
+  line-height: 1px;
+  font-size: 18px;
+  font-family: "Orbitron", sans-serif;
+  margin-left: 20px;
+}
+.border_box_input p {
+  color: red;
+  width: 130px;
+  padding: 5px;
+  font-weight: bold;
+  margin: 2px;
+}
+.ticketNoShow {
+  border-radius: 100px;
+  background-color: #3f51b5;
+  color: white;
+  font-weight: bold;
+}
+.deletBtn {
+  border-radius: 50%;
+  padding: 5px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+  cursor: pointer;
+}
+.ticket_id {
+  border: 1px solid blue;
+  color: blue;
+  border-radius: 10px;
+  margin: 5px;
+  margin-left: -7px;
+  padding: 5px;
+  background-color: #f0f5ff;
+  font-size: 10px;
+}
+.bg_box div {
+  color: red;
+}
+.display_button_1 {
+  display: flex;
+  justify-content: space-between;
+  margin-right: -13px;
+  margin-top: -13px;
+}
+.inputContainer {
+  background-color: #186ab4;
+  width: 300px;
+  padding: 10px;
+  margin: auto;
+  border: 0px solid gray;
+  border-radius: 8px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  padding-right: 50px;
+}
+.allItem {
+  width: 400px;
+  margin: auto;
+  padding: 30px;
+  background-color: #186ab4;
+}
