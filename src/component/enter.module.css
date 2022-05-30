@@ -123,7 +123,7 @@
   background-color: #186ab4;
 }
 .cards {
-  width: 300px;
+  width: 700px;
   display: flex;
   flex-wrap: wrap;
 }
