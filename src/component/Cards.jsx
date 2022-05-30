@@ -14,7 +14,12 @@ function Cards({ ticket, deleteItem }) {
             <DeleteOutlined />
           </div>
         </div>
-        <p className={styled.ticketNoShow}>{ticket.arr}</p>
+
+        <div className={styled.noShow}>
+          {ticket.arr.map((item) => (
+            <p className={styled.ticketNoShow}>{item}</p>
+          ))}
+        </div>
       </div>
     </div>
   );

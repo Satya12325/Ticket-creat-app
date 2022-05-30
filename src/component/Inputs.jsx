@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "./enter.module.css";
 import { DeleteOutlined } from "@ant-design/icons";
-
+import wheel from "./wheel.png";
 function Inputs({ ticket, setTicket }) {
   const [count, setCount] = useState(1);
   const [arr, setArr] = useState([]);
@@ -12,8 +12,26 @@ function Inputs({ ticket, setTicket }) {
     setArr([]);
   };
 
+  const handleAuto = () => {
+    const num = Math.floor(100000 + Math.random() * 900000);
+    let no = num.toString().split("").map(Number);
+    // setArr([...arr, no]);
+    //arr.join("");
+
+    console.log(arr, "arrayauto");
+    setTicket([
+      ...ticket,
+      {
+        arr: no,
+        id: count
+      }
+    ]);
+    setArr([]);
+    setCount(count + 1);
+  };
+
   return (
-    <div style={{ width: "200px", margin: "auto" }}>
+    <div style={{ width: "500px", margin: "auto" }}>
       <div style={{ display: "flex" }}>
         <div className={styled.container}>
           <div className={styled.sow_number}>
@@ -159,6 +177,20 @@ function Inputs({ ticket, setTicket }) {
             }}
           >
             + ADD TICKET
+          </div>
+        </div>
+        <div className={styled.autoGen}>
+          <p style={{ color: "white", fontSize: "15px" }}>
+            Click the wheel to generate random ticket{" "}
+          </p>
+          <img
+            src={wheel}
+            alt="wheel"
+            className={styled.wheelImage}
+            onClick={handleAuto}
+          />
+          <div className={styled.ranges}>
+            Ticket number ranges 100000-999999
           </div>
         </div>
       </div>
